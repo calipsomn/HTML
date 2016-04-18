@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            border-color:black;
+        }
+        .tdLeft{
+            text-align:left;
+        }
+        .tdRight{
+            text-align:right;
+        }
+        .tdCenter{
+            text-align:center;
+        }
+        label{
+            text-emphasis:filled;
+        }
+        input{
+            border:inset;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px" cellpadding="3">
+        <tr>
+            <td><label for="ln" class="tdRight">Last Name</label></td>
+            <td colspan="3" class="tdLeft"><input type="text" id="ln" placeholder="Last Name"/></td>
+        </tr>
+        <tr>
+            <td><label for="fn" class="tdRight">First Name</label></td>
+            <td colspan="3" class="tdLeft"><input type="text" id="fn" placeholder="First Name"/></td>
+        </tr>
+        <tr>
+            <td><label for="address" class="tdRight">Address</label></td>
+            <td colspan="3" class="tdLeft"><textarea id="address" placeholder="Address"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="city" class="tdRight">City</label></td>
+            <td><input type="text" id="city" placeholder="City"/></td>
+            <td><label for="state">State</label></td>
+            <td><input type="text" id="state" placeholder="State"/></td>
+        </tr>
+    </table>
+</body>
+</html>
