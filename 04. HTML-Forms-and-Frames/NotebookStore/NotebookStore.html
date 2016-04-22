@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -19,7 +19,7 @@
 </head>
 <body>
     <form method="get" action="NotebookStore.html">
-        <table class="mainTable" style="width:100%" border="1">
+        <table class="mainTable" style="width:700px" border="1">
             <tr>
                 <td colspan="2" align="center">
                     <a href="NotebookStore.html">Apple</a>
@@ -32,13 +32,13 @@
                 </td>
             </tr>
             <tr>
-                <td>
-                    <table class="mainTable" cellpadding="10">
+                <td width="70%">
+                    <table class="mainTable" cellpadding="10" width="100%">
                         <tr>
                             <td>
                                 <fieldset>
                                     <legend>Apple MacBook Air</legend>
-                                    <table class="logicTable">
+                                    <table class="mainTable">
                                         <tr>
                                             <td rowspan="2">
                                                 <img src="images/mac.jpg" width="100px" />
@@ -162,16 +162,27 @@
                         </tr>
                     </table>
                 </td>
+                <td width="30%" align="center">
+                    <label for="minPrice">Min price: 500 USD</label>
+                    <br />
+                    <input id="minPrice" type="range" min="500" max="1500" value="1000" />
+                    <br />
+                    <label for="maxPrice">Max price: 1500 USD</label>
+                    <br />
+                    <input id="maxPrice" type="range" min="500" max="1500" value="1000" />
+                    <br />
+                    <label for="minRam">Min RAM: 4GB</label>
+                    <br />
+                    <input id="minRam" type="range" min="4" max="16" value="10" />
+                    <br />
+                    <label for="maxRam">Max RAM: 16GB</label>
+                    <br />
+                    <input id="maxRam" type="range" min="4" max="16" value="10" />
+                    <br />
+                </td>
             </tr>
         </table>
         <br />
-        <button type="submit">Previous</button>
-        <a href="UniversityGrid.html">1</a>,
-        <a href="UniversityGrid.html">2</a>,
-        <a href="UniversityGrid.html">3</a>,
-        <a href="UniversityGrid.html">4</a>, ...,
-        <a href="UniversityGrid.html">1</a>,
-        <button type="submit">Next</button>
     </form>
 </body>
 </html>
